@@ -3,7 +3,7 @@ const nunjucks = require('nunjucks')
 
 const server = express()
 const videos = require("./data")
-const courses = require("./data")
+
 
 server.use(express.static('public'))
 
@@ -49,7 +49,7 @@ server.get('/course/:id', function (req, res) {
     const id = req.params.id
 
 
-    const course = courses.find(function (course) {
+    const course = videos.find(function (course) {
         return course.id == id
     })
 
