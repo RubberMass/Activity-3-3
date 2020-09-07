@@ -1,0 +1,296 @@
+@import "https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap";
+
+:root {
+  --color-green: rgb(127, 255, 0);
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+/* HEADER */
+
+header {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-bottom: 1 solid #333;
+    margin-bottom: 20px;
+  }
+  
+  header nav {
+    text-align: center;
+  }
+  
+  header nav a {
+    margin: 30px;
+    color: aliceblue;
+    font-size: 18px;
+    line-height: 28px;
+    text-decoration: none;
+  }
+  header nav :hover {
+    color: var(--color-green);
+    transition: color 200ms;
+  }
+
+/* INDEX */
+
+body {
+    background: #282a36;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  article p {
+    text-align: center;
+    color: aliceblue;
+    font-size: 18px;
+    line-height: 28px;
+    max-width: 500px;
+    margin: 0px auto;
+  }
+  
+  .titulo {
+    font-size: 42px;
+    line-height: 52px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  footer {
+    border-top: 1px solid #333;
+    text-align: center;
+    font-size: 18px;
+    line-height: 28px;
+    background: rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+  
+  article ul li {
+    display: inline-block;
+  }
+  
+  article ul li {
+    color: rgb(251, 208, 0);
+    font-size: 18px;
+    line-height: 28px;
+    margin: 10px;
+  }
+  
+  #centro {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 5px solid rgb(251, 208, 0);
+  }
+  
+  .empurra {
+    text-align: center;
+  }
+  
+  article p a {
+    color: rgb(143, 7, 201);
+  }
+  
+  .efeito:hover {
+    color: var(--color-green);
+    transition: color 200ms;
+  }
+  
+  .wrapper {
+    font-family: "Roboto", sans-serif;
+    color: aliceblue;
+    text-align: center;
+  }
+  
+  footer a {
+    margin: 30px;
+    color: rgb(143, 7, 201);
+    text-decoration: none;
+  }
+  
+  footer :hover {
+    color: var(--color-green);
+    transition: color 200ms;
+    text-decoration: underline;
+  }
+
+/* CARDS */
+
+.cards {
+    font-family: "Roboto", sans-serif;
+    color: aliceblue;
+    margin: 0 500px;
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .card_roxo {
+    margin: 22px;
+    padding: 5px;
+    text-align: center;
+    width: 500px;
+    height: 493px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  
+  #bordas :hover {
+    transition: color 200ms;
+    border: 2px solid green;
+  }
+  
+  .card__content {
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 10%;
+  }
+  
+  .card__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    margin-top: 40%;
+    border-radius: 5%;
+    padding: 5px;
+    filter: brightness(80%);
+    background-color: #282a36;
+  }
+
+/* COURSES */
+
+.courses {
+    max-width: 1100px;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.course {
+    background: var(--black-opacity);
+    padding: 8px;
+    cursor: pointer;
+    display: grid;
+}
+
+.course-image {
+    text-align: center;
+}
+
+.course-image img{
+  height: 350px;
+}
+
+.course-content,
+.course-info {
+    padding: 30px;
+}
+
+.course-content p {
+    line-height: 26px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(224, 224, 224);
+}
+
+.info {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  margin-top: 40px;
+}
+
+.course-info  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    color: white;
+    font-size: 25px;
+    margin-top: 120px;
+    text-align: center;
+    
+    
+}
+
+.course-duration {
+    padding: 5px 20px;
+    border-radius: 20px;
+    filter: brightness(80%);
+    background-color: #282a36;
+    
+}
+
+.course-price  {
+  
+  padding: 5px 20px;
+  border-radius: 20px;
+  filter: brightness(80%);
+  background-color: #282a36;
+  
+
+}
+
+
+
+
+/* MODAL */
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .modal {
+    background-color: aliceblue;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+  }
+  
+  .maximize {
+    background-color: aliceblue;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+  }
+  
+  .modal .close-modal {
+    color: black;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+  }
+  
+  .modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .modal .max-modal {
+    color: black;
+    position: absolute;
+    right: 32px;
+    top: 8px;
+    cursor: pointer;
+  }
+  
+  iframe {
+    width: 100%;
+    height: 90%;
+    top: 5%;
+    position: absolute;
+  }

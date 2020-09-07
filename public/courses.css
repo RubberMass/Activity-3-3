@@ -1,0 +1,45 @@
+
+
+
+.courses {
+    max-width: 1100px;
+    margin: 94px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.course {
+    background: var(--black-opacity);
+    padding: 8px;
+    cursor: pointer;
+    display: grid;
+}
+
+.course-image {
+    text-align: center;
+}
+
+.course-content,
+.course-info {
+    padding: 24px;
+}
+
+.course-content p {
+    line-height: 26px;
+    font-weight: bold;
+}
+
+.course-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.course-info .course-price {
+    text-align: center;
+    background: var(--black-opacity);
+    filter: brightness(90%);
+    border-radius: 20px;
+    padding: 4px;
+}

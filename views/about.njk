@@ -1,0 +1,29 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+        <title>sobre - {{ about.role }}</title>
+    {% endblock%}
+
+{% block content %}
+
+    <article>
+      <img src="{{ about.avatar_url }}" alt="imagem de {{ about.avatar }}" id="centro">
+      <p class="titulo">{{ about.role }}</p>
+      <p>
+        {{ about.description }}
+      </p>
+      <p> Abaixo a stack das tecnologias usadas pela <a href="https://rocketseat.com.br/starter" target="_blank"class="efeito">Rocketseat</a>:</p>
+      <ul class="empurra">
+      {% for link in about.empurra %}
+        <li>{{ empurra.name }}</li>
+      {% endfor %}
+      </ul>
+    </article>
+
+    <footer>
+    {% for link in about.links %}
+      <a href="{{ link.url }}" target="_blank">{{ link.name }}</a>
+      {% endfor%}
+    </footer>
+
+  {% endblock%}}
